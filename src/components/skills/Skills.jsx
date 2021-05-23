@@ -2,7 +2,7 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <div id="Skills" className="center">
+    <section id="Skills" className="center">
       <div className="skill_box">
         <div className="box">
           <svg
@@ -95,7 +95,7 @@ const Skills = () => {
           <p style={{ fontFamily: "Lato" }}>Node</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

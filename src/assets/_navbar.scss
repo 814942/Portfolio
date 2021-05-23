@@ -1,5 +1,6 @@
 @import "./color/color.scss";
 @import "./font/font.scss";
+@import "./mixing/mixing.scss";
 
 .navbar {
   position: fixed;
@@ -29,18 +30,13 @@
 }
 
 .nav-link {
-  display: flex;
-  align-items: center;
-  height: 5rem;
-  color: $primario-1;
-  text-decoration: none;
-  filter: grayscale(50%) opacity(0.7);
-  transition: $transition-speed;
+  @include iconStyles(5rem, $terciario-5);
 
   &:hover {
     filter: grayscale(0%) opacity(1);
     background: $secundario-8;
     color: $primario-7;
+    content: "Clickeame";
   }
 
   svg {

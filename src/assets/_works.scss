@@ -1,5 +1,16 @@
+@import "./mixing/mixing.scss";
+@import "./color/color.scss";
+
 #Works {
   height: 100vh;
   width: 100%;
   padding-left: 4rem;
+}
+
+.slide-info {
+  padding: 1rem;
+}
+
+.slide-link {
+  height: 1rem !important;
 }
