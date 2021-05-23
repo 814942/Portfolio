@@ -1,0 +1,31 @@
+/* Paleta de colores */
+@import url("./assets/color/color.css");
+
+/**** FONTS ****/
+@import url("./assets/font/font.css");
+
+/**** HEADER ****/
+/* @import url("./assets/header.css"); */
+
+/**** HERO ****/
+@import url("./assets/hero2.css");
+
+/**** NAVBAR ****/
+@import url("./assets/navbar.css");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--terciario-1);
+}

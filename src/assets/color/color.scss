@@ -1,0 +1,37 @@
+$primario-1: hsl(0, 100%, 98%);
+$primario-2: hsl(357, 100%, 92%);
+$primario-3: hsl(357, 100%, 85%);
+$primario-4: hsl(357, 100%, 68%);
+$primario-5: hsl(0, 100%, 79%);
+$primario-6: hsl(0, 56%, 65%);
+$primario-7: hsl(0, 74%, 72%);
+$primario-8: hsl(357, 100%, 12%);
+
+$secundario-1: hsl(195, 33%, 98%);
+$secundario-2: hsl(183, 27%, 84%);
+$secundario-3: hsl(182, 28%, 58%);
+$secundario-4: hsl(183, 28%, 51%);
+$secundario-5: hsl(186, 70%, 25%);
+$secundario-6: hsl(182, 28%, 38%);
+$secundario-7: hsl(182, 27%, 24%);
+$secundario-8: hsl(184, 29%, 11%);
+
+$terciario-1: hsl(59, 97%, 65%);
+$terciario-2: hsl(0, 97%, 60%);
+$terciario-3: hsl(203, 97%, 55%);
+$terciario-4: hsl(170, 76%, 48%);
+$terciario-5: hsl(33, 53%, 46%);
+
+$background: $primario-7;
+
+$primario: $primario-3;
+
+$secundario: $secundario-3;
+
+$secundario-light: $primario-1;
+
+$link: $terciario-4;
+
+$link-hover: $secundario-7;
+
+$transition-speed: 600ms;

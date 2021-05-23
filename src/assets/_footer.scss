@@ -1,0 +1,24 @@
+#Footer {
+  width: 100%;
+  padding: 3em 0;
+  flex-direction: column;
+  background: #1a1a1a;
+  text-align: center;
+}
+
+.social_media_icons {
+  margin-top: 1em;
+  text-align: center;
+
+  a {
+    margin: 0 0.8em;
+    border-radius: 50px;
+  }
+}
+
+.svg_icon {
+  height: 4rem;
+  font-size: 1.8em;
+  padding: 0.2em;
+  transition: color 0.4s;
+}

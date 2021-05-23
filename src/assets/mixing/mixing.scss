@@ -1,0 +1,5 @@
+@mixin alignment($jjustify, $aalign) {
+  display: flex;
+  justify-content: $jjustify;
+  align-items: $aalign;
+}

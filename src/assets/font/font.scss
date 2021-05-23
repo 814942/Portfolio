@@ -1,0 +1,50 @@
+/* Familias Tipograficas */
+
+@font-face {
+  font-family: "Finger";
+  src: url("../font/Finger_Paint/FingerPaint-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Henry";
+  src: url("../font/Henny_Penny/HennyPenny-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../font/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Titillium";
+  src: url("../font/Titillium_Web/TitilliumWeb-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Yantra";
+  src: url("../font/Yantramanav/Yantramanav-Light.ttf");
+}
+
+/* Escala aplicada */
+$caption: 14px;
+$note: 16px;
+$base: 20px;
+$subheader: 30px;
+$title: 48px;
+$headline: 72px;
+$display: 96px;
+$jumbo: 144px;
+
+@media (max-width: 900px) {
+  html {
+    /* Variable para ventanas mas pequeñas */
+    $caption: 12px;
+    $note: 14px;
+    $base: 16px;
+    $subheader: 20px;
+    $title: 24px;
+    $headline: 36px;
+    $display: 48px;
+    $jumbo: 60px;
+  }
+}

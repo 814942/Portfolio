@@ -1,0 +1,152 @@
+@import "./color/color.scss";
+@import "./font/font.scss";
+
+.navbar {
+  position: fixed;
+  background: $terciario-5;
+  font-size: $subheader;
+  font-family: "Lato";
+  transition: width 600ms ease;
+  z-index: 9999;
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-item {
+  width: 100%;
+}
+
+.nav-item:last-child {
+  margin-top: auto;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  color: $primario-1;
+  text-decoration: none;
+  filter: grayscale(50%) opacity(0.7);
+  transition: $transition-speed;
+
+  &:hover {
+    filter: grayscale(0%) opacity(1);
+    background: $secundario-8;
+    color: $primario-7;
+  }
+
+  svg {
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 1rem;
+  }
+
+  :active {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.link-text {
+  font-size: $subheader;
+  margin-left: 0.5rem;
+}
+
+.fa-primary {
+  color: $primario-1;
+}
+
+.fa-secondary {
+  color: $secundario-1;
+}
+
+.fa-primary,
+.fa-secondary {
+  transition: $transition-speed;
+}
+
+.logo {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: $primario-1;
+  font-size: 1.5rem;
+  letter-spacing: 0.3ch;
+  width: 100%;
+  background: black;
+
+  svg {
+    transform: rotate(0deg);
+    transition: $transition-speed;
+  }
+}
+
+.logo-text {
+  display: inline;
+  position: absolute;
+  left: -999px;
+  transition: $transition-speed;
+}
+
+.navbar:hover .logo svg {
+  transform: rotate(-360deg);
+}
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    bottom: 0;
+    width: 100vw;
+    height: 4rem;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .nav-link {
+    justify-content: center;
+  }
+}
+
+/* Large screens */
+@media only screen and (min-width: 600px) {
+  .navbar {
+    top: 0;
+    width: 4rem;
+    height: 100vh;
+  }
+
+  .navbar:hover {
+    width: 10rem;
+  }
+
+  .link-text {
+    overflow: hidden;
+  }
+
+  .navbar:hover .link-text {
+    transition: 0.6s;
+    display: inline;
+  }
+
+  .navbar:hover .logo svg {
+    margin-left: 7rem;
+  }
+
+  .navbar:hover .logo-text {
+    left: 0px;
+  }
+}
