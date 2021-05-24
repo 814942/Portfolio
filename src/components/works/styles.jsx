@@ -16,10 +16,10 @@ export const ButtonSlider = styled.button`
   :hover {
     font-size: 4rem;
     color: hsl(0, 100%, 98%);
+    cursor: pointer;
   }
   :active {
-    background-color: hsl(0, 0%, 80%);
-    color: hsl(0, 100%, 100%);
+    font-size: 6rem;
   }
 `;
 
@@ -40,13 +40,15 @@ export const SliderAtr = styled.div`
     text-align: center;
   }
   .slide-info {
-    padding: 1rem 3rem 0 3rem;
+    padding: 1rem;
+    margin: 0 10rem 0 10rem;
   }
 
   .slide-left {
-    width: 70%;
-    text-align: left;
+    width: 50%;
+    text-align: right;
     padding: 0 1rem 0 2.5rem;
+    border-right: 7px double white;
   }
 
   .slide-left h3 {
@@ -62,7 +64,7 @@ export const SliderAtr = styled.div`
   }
 
   .slide-right {
-    width: 20%;
+    width: 50%;
     padding: 0 0 0 1rem;
     justify-content: left;
   }

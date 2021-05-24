@@ -8,12 +8,11 @@
 }
 
 .skill_box {
-  margin-left: 5rem;
   @include alignment(center, center);
 }
 
 .skill_box .box {
-  margin: 1em 1em;
+  margin: 1em 2em;
   width: 8em;
   height: 8em;
   background: $primario-4;

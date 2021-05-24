@@ -57,10 +57,8 @@
   position: relative;
   top: 10%;
   .me {
-    width: 19em;
-    height: 27em;
+    width: 20em;
     border-radius: 5%;
-    margin: 0 30px;
     box-shadow: 0 0 50px rgb(0 0 0 / 30%);
 
     &:hover {
@@ -70,9 +68,9 @@
 }
 
 .signature {
-  width: 50%;
+  width: 60%;
   position: absolute;
-  right: 1rem;
+  right: 0;
   bottom: -1rem;
   transform: skew(3deg, -2deg);
   filter: drop-shadow(1px 1px 1px $terciario-5);
@@ -88,7 +86,7 @@
 #Home::before {
   content: "";
   width: 100%;
-  height: 27em;
+  height: 30em;
   position: absolute;
   right: 15em;
   z-index: -1;
