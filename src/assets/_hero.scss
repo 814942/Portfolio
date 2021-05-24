@@ -19,7 +19,8 @@
   p {
     font-family: "Titillium";
     font-size: 1.5em;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
+    transform: translateX(-100px);
   }
 }
 
@@ -27,6 +28,7 @@
   font-family: "Titillium";
   font-size: 5em;
   color: $terciario-5;
+  transform: translateX(-100px);
 }
 
 .user_btn {

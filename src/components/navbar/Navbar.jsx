@@ -27,7 +27,7 @@ export default function Navbar() {
           </a>
         </li>
 
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <a href="#Profile" className="nav-link">
             <svg
               aria-hidden="true"
@@ -47,7 +47,7 @@ export default function Navbar() {
             <span className="link-text">Profile</span>
           </a>
         </li>
-
+ */}
         <li className="nav-item">
           <a href="#Skills" className="nav-link">
             <svg
@@ -91,7 +91,7 @@ export default function Navbar() {
         </li>
 
         <li className="nav-item" id="themeButton">
-          <a href="#Contact" className="nav-link">
+          <a href="#Footer" className="nav-link">
             <svg
               aria-hidden="true"
               focusable="false"

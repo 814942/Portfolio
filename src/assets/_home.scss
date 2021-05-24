@@ -1,6 +1,8 @@
+@import "./mixing/animation.scss";
+
 #Home {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   padding: 3em 1rem;
   backdrop-filter: blur(1px);
   position: relative;
@@ -21,6 +23,8 @@
     font-family: "Titillium";
     font-size: $title;
     margin-bottom: 1.5em;
+    /* ANI */
+    @include animation();
   }
 }
 
@@ -28,6 +32,9 @@
   font-family: "Titillium";
   font-size: $jumbo;
   color: $terciario-5;
+
+  /* ANI */
+  @include animation();
 }
 
 .user_btn {
@@ -87,4 +94,63 @@
   z-index: -1;
   background: rgb(19, 19, 19);
   top: 5rem;
+}
+
+/* ABOUT */
+
+.h1_profile {
+  font-size: $display;
+  font-family: "Titillium";
+  color: $primario-1;
+}
+
+.p_profile {
+  color: $primario-1;
+  font-size: $subheader;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+  font-family: "Lato";
+}
+
+/* MODAL */
+
+.user-modal {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  background: url("./img/poster.jpg");
+  text-align: center;
+  padding: 4rem;
+  border: 1px solid white;
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 4%;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5em 0.5em;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
 }
