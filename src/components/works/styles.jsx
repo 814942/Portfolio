@@ -39,10 +39,6 @@ export const SliderAtr = styled.div`
     padding: 1rem;
     text-align: center;
   }
-  .slide-info {
-    padding: 1rem;
-    margin: 0 10rem 0 10rem;
-  }
 
   .slide-left {
     width: 50%;
@@ -67,5 +63,36 @@ export const SliderAtr = styled.div`
     width: 50%;
     padding: 0 0 0 1rem;
     justify-content: left;
+  }
+
+  @media only screen and (max-width: 400px) {
+    overflow: auto;
+    .slide {
+      padding: 0.2em;
+    }
+
+    .slide-left {
+      padding: 0.5em;
+      width: 100%;
+      text-align: center;
+      border: none;
+    }
+
+    .slide-right {
+      width: 100%;
+      justify-content: center;
+      margin-top: 2em;
+      padding: 0;
+    }
+
+    .work-svg {
+      display: flex;
+      margin: 2em;
+    }
+
+    .slide-info {
+      display: block;
+      height: 50vh;
+    }
   }
 `;

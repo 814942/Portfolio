@@ -9,8 +9,43 @@
 
 .slide-info {
   padding: 1rem;
+  margin: 0 10rem 0 10rem;
 }
 
 .slide-link {
   height: 1rem !important;
+}
+
+/* RESPONSIVE */
+// Medium screen
+@media only screen and (max-width: 770px) {
+  #Works {
+    padding-bottom: 5rem;
+  }
+
+  .slide-info {
+    margin: 0;
+  }
+
+  .slide-left {
+    padding-left: 0.5em;
+  }
+}
+
+// Small screen
+@media only screen and (max-width: 400px) {
+  #Works {
+    padding-left: 0;
+    padding-bottom: 0;
+    height: inherit;
+  }
+
+  .slide-info {
+    padding: 0.2em;
+  }
+
+  .slide-left {
+    padding-left: 0.5em;
+    width: 90%;
+  }
 }

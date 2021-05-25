@@ -2,7 +2,6 @@
 
 #Home {
   width: 100%;
-  /* height: 100vh; */
   padding: 3em 1rem;
   backdrop-filter: blur(1px);
   position: relative;
@@ -22,8 +21,9 @@
   p {
     font-family: "Titillium";
     font-size: $title;
-    margin-bottom: 1.5em;
-    /* ANI */
+    margin-bottom: 1em;
+
+    /* ANImation */
     @include animation();
   }
 }
@@ -33,7 +33,7 @@
   font-size: $jumbo;
   color: $terciario-5;
 
-  /* ANI */
+  /* ANImation */
   @include animation();
 }
 
@@ -114,13 +114,13 @@
 
 .user-modal {
   position: absolute;
-  top: 40px;
+  top: 70px;
   left: 40px;
   right: 40px;
   bottom: 40px;
   background: url("./img/poster.jpg");
   text-align: center;
-  padding: 4rem;
+  padding: 8rem;
   border: 1px solid white;
 }
 
@@ -138,6 +138,7 @@
   top: 1rem;
   right: 1rem;
   padding: 0.5em 0.5em;
+  border-radius: 10%;
 }
 
 .ReactModal__Overlay {
@@ -151,4 +152,116 @@
 
 .ReactModal__Overlay--before-close {
   opacity: 0;
+}
+
+/* RESPONSIVE */
+// Medium screen
+@media only screen and (max-width: 770px) {
+  #Home,
+  #Particles {
+    height: 100vh;
+  }
+
+  #Home::before {
+    right: 4em;
+    height: 80vh;
+  }
+
+  .user_info {
+    margin: 0;
+
+    p {
+      font-size: $subheader;
+      margin-bottom: 0.5em;
+    }
+  }
+
+  .user_name {
+    font-size: $display;
+  }
+
+  .user_btn {
+    padding: 0.5em 1em;
+  }
+
+  .user_img {
+    top: 0;
+    .me {
+      width: 15em;
+    }
+  }
+
+  .Overlay {
+    left: 12%;
+  }
+
+  .user-modal {
+    padding: 3rem 1rem;
+  }
+
+  .h1_profile {
+    font-size: $headline;
+  }
+}
+
+// Small screen
+@media only screen and (max-width: 400px) {
+  #Home {
+    padding: 0.5em;
+  }
+
+  #Home::before {
+    right: 0;
+  }
+
+  .user_info {
+    margin: 0;
+
+    p {
+      font-size: $base;
+      margin-bottom: 0.5em;
+    }
+  }
+
+  .user_name {
+    font-size: $title;
+  }
+
+  .user_btn {
+    padding: 0.5em;
+    font-size: $note;
+    border: 1px solid #ff5c64c9;
+  }
+
+  .user_img {
+    top: 5%;
+    .me {
+      width: 7em;
+      box-shadow: 0 0 50px rgb(0 0 0);
+      border-radius: 10%;
+    }
+  }
+
+  .signature {
+    display: none;
+  }
+
+  .user-modal {
+    padding: 3rem 0.2rem;
+    top: 5%;
+    right: 12%;
+    bottom: 20%;
+    left: 0;
+  }
+
+  .h1_profile {
+    font-size: $title;
+    border-bottom: 2px solid white;
+  }
+
+  .p_profile {
+    font-size: $base;
+    line-height: 1rem;
+    margin: 1rem auto;
+  }
 }

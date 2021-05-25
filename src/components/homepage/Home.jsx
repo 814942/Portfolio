@@ -31,7 +31,7 @@ const Hero = () => {
         contentLabel="About me"
         onRequestClose={handleModal}
         className="user-modal"
-        overlayClassName={open ? "Overlay out" : "Overlay"}
+        overlayClassName="Overlay"
       >
         <h1 className="h1_profile">{data.title} </h1>
         <p className="p_profile">{data.intro} </p>

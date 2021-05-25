@@ -28,6 +28,29 @@
 
 .copyright {
   color: $terciario-5;
-
   margin-top: 1em;
+}
+
+/* RESPONSIVE */
+// Medium screen
+@media only screen and (max-width: 770px) {
+}
+
+// Small screen
+@media only screen and (max-width: 400px) {
+  #Footer {
+    margin-bottom: 3rem;
+
+    h1 {
+      font-size: 1em;
+    }
+  }
+
+  .svg_icon {
+    height: 2rem;
+  }
+
+  .copyright {
+    font-size: 0.7em;
+  }
 }
