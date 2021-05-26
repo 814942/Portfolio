@@ -21,6 +21,17 @@ export const ButtonSlider = styled.button`
   :active {
     font-size: 6rem;
   }
+
+  // Medium screen
+  @media only screen and (max-width: 770px) {
+    top: 70%;
+  }
+
+  @media only screen and (max-width: 400px) {
+    width: 10%;
+    font-size: 0;
+    top: 95%;
+  }
 `;
 
 export const SliderAtr = styled.div`
@@ -36,7 +47,7 @@ export const SliderAtr = styled.div`
     min-width: 100%;
     height: inherit;
     transition: 0.5s;
-    padding: 1rem;
+    padding: 0;
     text-align: center;
   }
 
@@ -52,11 +63,12 @@ export const SliderAtr = styled.div`
     padding: 5px 0;
     font-weight: 800;
     font-family: "Yantra";
+    font-size: 3rem;
   }
 
-  .slide-left h3,
-  p {
+  .slide-left p {
     font-family: "Yantra";
+    font-size: 1.5rem;
   }
 
   .slide-right {
@@ -65,10 +77,32 @@ export const SliderAtr = styled.div`
     justify-content: left;
   }
 
+  // Medium screen
+  @media only screen and (max-width: 770px) {
+    .slide-left {
+      padding: 1em;
+      width: 90%;
+    }
+
+    .slide-left h3,
+    .slide-left p {
+      font-size: 2rem;
+    }
+
+    .slide-right {
+      justify-content: center;
+    }
+  }
+
   @media only screen and (max-width: 400px) {
     overflow: auto;
     .slide {
-      padding: 0.2em;
+      padding: 0;
+    }
+
+    .slide-left h3,
+    .slide-left p {
+      font-size: 1rem;
     }
 
     .slide-left {
@@ -76,23 +110,30 @@ export const SliderAtr = styled.div`
       width: 100%;
       text-align: center;
       border: none;
+      font-size: 1rem;
+    }
+
+    .slide-left h3,
+    .slide-left p {
+      font-size: 1rem;
     }
 
     .slide-right {
       width: 100%;
-      justify-content: center;
-      margin-top: 2em;
+      margin-top: 1em;
       padding: 0;
     }
 
     .work-svg {
       display: flex;
-      margin: 2em;
+      margin: 1em;
+      width: 1.5em;
+      min-width: 1.5em;
     }
 
     .slide-info {
       display: block;
-      height: 50vh;
+      height: 10vh;
     }
   }
 `;

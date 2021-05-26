@@ -100,7 +100,7 @@
 @media only screen and (max-width: 600px) {
   .navbar {
     bottom: 0;
-    height: 3rem;
+    height: 4rem;
   }
 
   .logo {
@@ -114,7 +114,7 @@
 
   .nav-link {
     justify-content: center;
-    height: 3rem;
+    height: 4rem;
 
     svg {
       display: none;
@@ -123,11 +123,16 @@
 
   .nav-item {
     width: 100%;
+    height: 100%;
     border: 1px solid black;
   }
 
   .link-text {
     margin: 0;
+  }
+
+  .nav-item:last-child {
+    margin-top: 0;
   }
 }
 

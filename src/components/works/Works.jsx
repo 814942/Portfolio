@@ -31,8 +31,8 @@ const Works = () => {
               <ReactPlayer
                 url={item.video}
                 autopictureinpicture
-                width="75vw"
-                height="75vh"
+                width="90vw"
+                height="100vh"
                 style={{ margin: "0 auto" }}
                 controls
               />

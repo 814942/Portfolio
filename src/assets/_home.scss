@@ -207,7 +207,7 @@
 // Small screen
 @media only screen and (max-width: 400px) {
   #Home {
-    padding: 0.5em;
+    padding: 5em 0;
   }
 
   #Home::before {
@@ -234,11 +234,11 @@
   }
 
   .user_img {
-    top: 5%;
+    top: -5%;
     .me {
-      width: 7em;
+      width: 10em;
       box-shadow: 0 0 50px rgb(0 0 0);
-      border-radius: 10%;
+      border-radius: 5%;
     }
   }
 
