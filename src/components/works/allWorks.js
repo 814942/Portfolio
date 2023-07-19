@@ -2,7 +2,7 @@ export const works = [
   {
     name: "Code Bakery",
     description:
-      "Creation of e-commerce in scrum using everything learned in the bootcamp I am Henry.",
+      "Creation of e-commerce in scrum using everything learned in the Soy Henry bootcamp. Currently offline",
     link: "https://www.codebakery.store/",
     video: "https://vimeo.com/551611700",
     repositore: "https://github.com/ecommercehenry/codebakery",
