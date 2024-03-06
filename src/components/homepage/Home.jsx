@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 import me from "../../assets/img/me.jpg";
-import Signature from "../../assets/img/Signature.png";
 
 import Particles from "./Particles";
 import ReactModal from "react-modal";
@@ -41,8 +40,6 @@ const Hero = () => {
       </ReactModal>
       <div className="user_img">
         <img src={me} alt="Pablo Garay" className="me" />
-
-        <img src={Signature} alt="signature" className="signature" />
       </div>
     </section>
   );
