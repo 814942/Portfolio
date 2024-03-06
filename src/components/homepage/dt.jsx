@@ -1,5 +1,5 @@
 export const data = {
-  title: "Hello there!",
+  title: "👋 Hey, I’m Pablo!",
   intro:
-    "My name is Pablo Garay and i am a full stack developer under the PERN stack. I have a very particular set of skills that I have acquired with a lot of effort ranging from: UX / UI Design + HTML + CSS + Javascript to React + Redux or Nodejs + Express + Sequelize + Postgresql even Firebase or GraphQL.",
+    "Creative and collaborative developer with 2+ years of web development experience. Proactive team player with a get things done attitude. Proven ability to work in multicultural teams and fast-paced environments. Used to working with multiple teams, including development, testing and devops. Experience in end-to-end development, from creating a design concept and planning product development through software release. Support for adding new features and increasing value. Understanding of customer issues and desired outcomes.",
 };
