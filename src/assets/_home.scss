@@ -49,7 +49,7 @@
   border-radius: 5%;
 
   &:hover {
-    background-color: $primario-4;
+    color: $primario-8;
   }
 }
 
@@ -118,10 +118,11 @@
   left: 40px;
   right: 40px;
   bottom: 40px;
-  background: url("./img/poster.jpg");
   text-align: center;
   padding: 8rem;
   border: 1px solid white;
+  background-color: $primario-4;
+  opacity: .99;
 }
 
 .Overlay {
