@@ -40,7 +40,7 @@ const Footer = () => {
           </svg>
         </a>
       </div>
-      <span className="copyright">© 2021 Pablo Garay</span>
+      <span className="copyright">© 2025 Pablo Garay</span>
     </footer>
   );
 };

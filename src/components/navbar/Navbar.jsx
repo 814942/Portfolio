@@ -69,6 +69,12 @@ export default function Navbar() {
           </a>
         </li>
 
+        <li className="nav-item">
+          <a href="#Jobs" className="nav-link">
+          <svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"></style> <g> <path class="st0" d="M477.984,39.203H34.016C15.219,39.203,0,54.438,0,73.219v283.969c0,18.781,15.219,34.016,34.016,34.016H220 v7.578c0,18.781-15.219,34.016-34.016,34.016H136v40h73.188h93.625H376v-40h-49.984c-18.797,0-34.016-15.234-34.016-34.016v-7.578 h185.984c18.797,0,34.016-15.234,34.016-34.016V73.219C512,54.438,496.781,39.203,477.984,39.203z M464,315.859 c0,6.266-5.078,11.344-11.344,11.344H59.344c-6.266,0-11.344-5.078-11.344-11.344V98.547c0-6.266,5.078-11.344,11.344-11.344 h393.313c6.266,0,11.344,5.078,11.344,11.344V315.859z"></path> </g> </g></svg>            <span className="link-text">Jobs</span>
+          </a>
+        </li>
+
         <li className="nav-item" id="themeButton">
           <a href="#Footer" className="nav-link">
             <svg

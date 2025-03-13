@@ -22,7 +22,6 @@
   border-top-right-radius: 10px;
   border-bottom: none;
   flex-direction: column;
-  cursor: none;
   position: relative;
   z-index: 1;
   padding: 0.5rem;
@@ -50,6 +49,21 @@
 
 .skill_box .box i {
   margin-bottom: 0.1em;
+}
+
+.skill_box_children {
+  @include alignment(center, center);
+  gap: 1rem;
+}
+
+.child_box {
+  padding: 1rem;
+  text-align: center;
+}
+
+.child_name {
+  color: $primario-4;
+  font-weight: 400;
 }
 
 .skill_head {

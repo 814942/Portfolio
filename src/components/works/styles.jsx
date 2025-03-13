@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ButtonSlider = styled.button`
   position: absolute;
-  top: 50%;
+  top: 30%;
   transform: translateY(-50%);
   width: 7%;
   height: 100%;
@@ -42,6 +42,7 @@ export const SliderAtr = styled.div`
   display: flex;
   align-items: center;
   overflow: hidden;
+  padding-top: 1em;
 
   .slide {
     min-width: 100%;
@@ -52,10 +53,22 @@ export const SliderAtr = styled.div`
   }
 
   .slide-left {
-    width: 50%;
-    text-align: right;
-    padding: 0 1rem 0 2.5rem;
+    text-align: left;
+    padding: 0 1rem 0 0;
     border-right: 7px double white;
+    tex
+  }
+
+  .slide-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: .5rem;
+  }
+
+  .slide-description ul {
+    list-style: none;
+    padding-left: 0;
   }
 
   .slide-left h3 {
@@ -68,12 +81,13 @@ export const SliderAtr = styled.div`
 
   .slide-left p {
     font-family: "Yantra";
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .slide-right {
-    width: 50%;
     padding: 0 0 0 1rem;
+    flex-direction: column;
+    gap: 3rem;
     justify-content: left;
   }
 

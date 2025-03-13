@@ -1,0 +1,204 @@
+@import "./mixing/animation.scss";
+
+.font-color {
+  color: hsl(184, 29%, 11%);
+  font-family: "Yantra";
+}
+
+#Jobs {
+  width: 100%;
+  padding: 3em 1rem;
+  background-color: $primario-1;
+  position: relative;
+  flex-wrap: wrap-reverse;
+  flex-direction: column;
+}
+
+.job-header-container {
+  text-align: center;
+}
+
+.job {
+  color: hsl(184, 29%, 11%);
+  font-family: "Yantra";
+}
+
+.header {
+  font-weight: 800;
+  font-size: 3rem;
+  color: $terciario-5;
+}
+
+.subheader {
+  font-size: 1rem;
+}
+
+.job-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+.job-container ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.job-container li {
+  cursor: pointer;
+  text-align: center;
+  font-weight: 500;
+  line-height: 38px;
+  transition: all ease-in-out .5s;
+  color: hsl(184, 29%, 11%);
+}
+
+.job-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.job-slider p {
+  color: hsl(184, 29%, 11%);
+}
+
+.slider-active {
+  border-bottom: 1px solid $primario-4;
+}
+
+.job-description {
+  width: 70%;
+  margin: 0 auto;
+  color: hsl(184, 29%, 11%);
+  border: 1px solid $primario-4;
+  padding: 2rem;
+  box-shadow: 5px 10px 10px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 1rem;
+}
+
+.data-job-description {
+  padding: .5rem;
+}
+
+.data-job-description * {
+  color: hsl(184, 29%, 11%);  
+}
+
+
+/* RESPONSIVE */
+// Medium screen
+@media only screen and (max-width: 770px) {
+  #Home,
+  #Particles {
+    height: 100vh;
+  }
+
+  #Home::before {
+    right: 4em;
+    height: 80vh;
+  }
+
+  .user_info {
+    margin: 0;
+
+    p {
+      font-size: $subheader;
+      margin-bottom: 0.5em;
+    }
+  }
+
+  .user_name {
+    font-size: $display;
+  }
+
+  .user_btn {
+    padding: 0.5em 1em;
+  }
+
+  .user_img {
+    top: 0;
+    .me {
+      width: 15em;
+    }
+  }
+
+  .Overlay {
+    left: 12%;
+  }
+
+  .user-modal {
+    padding: 3rem 1rem;
+  }
+
+  .h1_profile {
+    font-size: $headline;
+  }
+}
+
+// Small screen
+@media only screen and (max-width: 400px) {
+  #Home {
+    padding: 5em 0;
+  }
+
+  #Home::before {
+    right: 0;
+  }
+
+  .user_info {
+    margin: 0;
+
+    p {
+      font-size: $base;
+      margin-bottom: 0.5em;
+    }
+  }
+
+  .user_name {
+    font-size: $title;
+  }
+
+  .user_btn {
+    padding: 0.5em;
+    font-size: $note;
+    border: 1px solid #ff5c64c9;
+  }
+
+  .user_img {
+    top: -5%;
+    .me {
+      width: 10em;
+      box-shadow: 0 0 50px rgb(0 0 0);
+      border-radius: 5%;
+    }
+  }
+
+  .signature {
+    display: none;
+  }
+
+  .user-modal {
+    padding: 3rem 0.2rem;
+    top: 5%;
+    right: 12%;
+    bottom: 20%;
+    left: 0;
+  }
+
+  .h1_profile {
+    font-size: $title;
+    border-bottom: 2px solid white;
+  }
+
+  .p_profile {
+    font-size: $base;
+    line-height: 1rem;
+    margin: 1rem auto;
+  }
+}

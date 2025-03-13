@@ -1,5 +1,5 @@
 export const data = {
   title: "👋 Hey, I’m Pablo!",
   intro:
-    "Creative and collaborative developer with 2+ years of web development experience. Proactive team player with a get things done attitude. Proven ability to work in multicultural teams and fast-paced environments. Used to working with multiple teams, including development, testing and devops. Experience in end-to-end development, from creating a design concept and planning product development through software release. Support for adding new features and increasing value. Understanding of customer issues and desired outcomes.",
+    "Experienced Full Stack Developer with 3+ years of expertise in building scalable and high-performance systems using Node.js, TypeScript, and NestJS. Proficient in designing robust architectures and working with both relational and NoSQL databases. Passionate about writing clean, maintainable code while ensuring reliability and efficiency. Strong problem-solving skills with a keen ability to navigate complex technical challenges. Excellent communicator, adept at translating technical concepts into clear, actionable insights. Always eager to learn, innovate, and stay ahead in the ever-evolving tech landscape.",
 };

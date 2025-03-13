@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import me from "../../assets/img/me.jpg";
+import me from "../../assets/img/me.webp";
 
 import Particles from "./Particles";
 import ReactModal from "react-modal";
