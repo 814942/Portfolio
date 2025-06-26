@@ -1,6 +1,8 @@
 import { useTranslation } from 'react-i18next'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
+import { FiMail } from 'react-icons/fi'
 
 export function Footer() {
   const { t } = useTranslation()
@@ -52,6 +54,18 @@ export function Footer() {
               <FaLinkedin aria-hidden="true" focusable="false" />
             </a>
           </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.15, rotate: 0 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <Link
+              to="/contact"
+              aria-label={t('footer.emailAria', 'Contact')}
+              className="text-2xl hover:text-primary transition-colors"
+            >
+              <FiMail aria-hidden="true" focusable="false" />
+            </Link>
+          </motion.li>
         </ul>
       </nav>
       <motion.span
@@ -60,7 +74,7 @@ export function Footer() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.4, duration: 0.5 }}
       >
-        © 2025 Pablo Garay
+        2021 - 2025 Pablo Garay
       </motion.span>
     </motion.footer>
   )

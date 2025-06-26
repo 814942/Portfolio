@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { useTranslation } from "react-i18next"
-import { motion, AnimatePresence } from "framer-motion"
+import { motion } from "framer-motion"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 import { getSkillIcon } from "@/utils/get-skill-icon.util"
 import { createPortal } from "react-dom"
@@ -10,9 +10,17 @@ interface IChilds {
   name: string
 }
 
+interface ISkill {
+  id: string
+  name: string
+  desc: string
+  icon?: string
+  childs?: IChilds[]
+}
+
 export default function Skills() {
   const { t } = useTranslation()
-  const skills = t("skills.items", { returnObjects: true }) as Record<string, any>
+  const skills = t("skills.items", { returnObjects: true }) as Record<string, ISkill>
   const [dataChilds, setDataChilds] = useState<IChilds[]>([])
   const [activeSkill, setActiveSkill] = useState<string | null>(null)
 
@@ -32,16 +40,29 @@ export default function Skills() {
       className="flex flex-col items-center justify-center min-h-[60vh] px-4 py-8"
       aria-labelledby="skills-title"
     >
-      <h2 id="skills-title" className="text-3xl font-bold mb-8">
-        {t("skills.title")}
-      </h2>
+      <motion.header
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="mb-8 text-center"
+      >
+        <h2 id="skills-title" className="text-3xl font-bold mb-2">
+          {t("skills.title")}
+        </h2>
+        <p className="text-muted-foreground">{t("skills.subtitle")}</p>
+      </motion.header>
       <TooltipProvider>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 w-full max-w-5xl mb-8">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 w-full max-w-5xl mb-8"
+        >
           {Object.entries(skills).map(([id, skill]) => (
             <Tooltip key={id}>
               <TooltipTrigger asChild>
                 <motion.button
-                  className={`relative flex flex-col items-center justify-center gap-4 p-8 rounded-2xl bg-background shadow-xl border-2 border-transparent hover:border-primary transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary
+                  className={`relative flex flex-col items-center justify-center cursor-pointer gap-4 p-8 rounded-2xl bg-background shadow-xl border-2 border-transparent hover:border-primary transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary
                     dark:shadow-[0_4px_32px_0_rgba(255,255,255,0.10)] dark:border-white/10`}
                   onClick={() => handleChilds(id, skill.childs || [])}
                   aria-label={skill.name}
@@ -56,23 +77,25 @@ export default function Skills() {
                 </motion.button>
               </TooltipTrigger>
               <TooltipContent>
-                <span>{skill.desc}</span>
+                <span>{t("skills.open")}</span>
               </TooltipContent>
             </Tooltip>
           ))}
-        </div>
+        </motion.div>
 
         {/* Overlay de childs */}
         {activeSkill && dataChilds.length > 0 &&
           createPortal(
             <div
               className="fixed left-1/2 bottom-[5%] z-[9999] w-[90vw] max-w-4xl -translate-x-1/2 mt-4 bg-background/90 backdrop-blur-lg rounded-xl shadow-2xl p-6 flex flex-wrap gap-4 justify-center
-                border border-primary/20 dark:border-white/10 dark:shadow-[0_8px_32px_0_rgba(255,255,255,0.10)]"            >
+                border border-primary/20 dark:border-white/10 dark:shadow-[0_8px_32px_0_rgba(255,255,255,0.10)]"
+            >
               {dataChilds.map((child) => (
                 <div
                   key={child.id}
                   className="flex flex-col items-center gap-2 px-4 py-2 rounded-lg bg-accent shadow hover:bg-primary/10 transition h-20 w-30
-                    dark:shadow-[0_2px_12px_0_rgba(255,255,255,0.10)] dark:border dark:border-white/10"                >
+                    dark:shadow-[0_2px_12px_0_rgba(255,255,255,0.10)] dark:border dark:border-white/10"
+                >
                   <span className="text-2xl">{getSkillIcon(child.id)}</span>
                   <span className="text-sm font-medium">{child.name}</span>
                 </div>

@@ -21,10 +21,12 @@
   "hero": {
     "title": "Pablo Garay",
     "intro": "Fullstack dev with a rocker's soul, backend-oriented. 4+ years building real-world solutions with clean code and solid APIs. Curious, self-taught, and always ready for the next challenge.",
-    "photoAlt": "Photo of Pablo Garay"
+    "photoAlt": "Photo of Pablo Garay",
+    "cta": "About me"
   },
   "skills": {
     "title": "Skills",
+    "subtitle": "Technologies and tools I use",
     "items": {
       "languages": {
         "name": "Languages",
@@ -94,7 +96,8 @@
           { "id": "serverless", "name": "Serverless" }
         ]
       }
-    }
+    },
+    "open": "Open"
   },
   "error": {
     "title": "Something went wrong",
@@ -132,7 +135,7 @@
       }
     ]
   },
-  "jobs": {
+  "works": {
     "all": ["codeBakery", "todoList", "weatherApp", "gameOfLife"],
     "highlights": "Highlights include",
     "stack": "My projects showcase a diverse tech stack",
@@ -236,5 +239,62 @@
   },
   "common": {
     "close": "Close"
+  },
+  "jobs": {
+    "all": ["1", "2"],
+    "title": "Work Experience",
+    "subtitle": "I have worked in various companies, contributing my skills in full stack development",
+    "data": {
+      "1": {
+        "name": "Creative Dog",
+        "location": "Buenos Aires, Argentina - Remote",
+        "description": {
+          "title": "Back-End Developer (Mid-level)",
+          "date": "April 2024 – May 2025",
+          "description": [
+            "E-commerce Back-End: I designed and built the backend of an online store—everything that happens behind the buy button. I used modern tools to ensure the site was fast, secure, and scalable.",
+            "Management App: I led the creation of an admin panel so the team could manage users, orders, and more, clearly and efficiently. I made sure it was intuitive and fast, using current web technologies.",
+            "Beyond coding, I contributed ideas to help the team work better and to improve the final product's quality. I'm always looking for ways to optimize what we do.",
+            "When problems arose, I not only solved them but also proposed strategic solutions to prevent them from happening again. I work with commitment to ensure projects reach a successful outcome."
+          ],
+          "skills": [
+            "Back-End: Node.js, NestJS, TypeScript, MongoDB, mySQL.",
+            "Front-End: React, Next.js, TypeScript.",
+            "Tools & Practices: Agile methodologies, CI/CD, REST APIs.",
+            "Performance optimization, scalable architecture, team leadership."
+          ]
+        }
+      },
+      "2": {
+        "name": "Clear Tech",
+        "location": "Buenos Aires, Argentina - Remote",
+        "description": {
+          "title": "Full Stack Developer (Mid-level)",
+          "date": "June 2021 – January 2024",
+          "description": [
+            "Call Center: I helped optimize a call center platform used by thousands of employees. I improved its performance by 70%, making it faster, more stable, and more efficient for daily users.",
+            "Traffic Ticket Management: I developed from scratch a set of web applications to automate traffic ticket management in Argentina. I implemented a microservices-based system that allows each part of the process to be controlled in an agile and scalable way."
+          ],
+          "skills": [
+            "Back-End: Node.js, NestJS, GraphQL, TypeScript, mySQL.",
+            "Front-End: React, TypeScript.",
+            "Tools & Practices: Agile methodologies, CI/CD, REST & GraphQL APIs.",
+            "Performance optimization, scalable architecture, team leadership."
+          ]
+        }
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Send me a message and I'll get back to you",
+    "name": "Your name",
+    "email": "Your email",
+    "whatsapp": "WhatsApp (optional)",
+    "message": "Your message",
+    "send": "Send",
+    "sending": "Sending...",
+    "success": "Message sent! Thank you",
+    "error": "Error sending message. Try again!"
   }
 }

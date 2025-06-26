@@ -7,8 +7,7 @@ import {
   NavigationMenuItem,
   NavigationMenuLink,
 } from '../components/ui/navigation-menu'
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger, SheetClose } from '../components/ui/sheet'
-import { Menu } from 'lucide-react'
+
 import { Logo } from './Logo'
 import { LanguageSwitch } from './LenguageSwitch'
 import { ThemeToggle } from './ThemeToggle'
@@ -29,10 +28,8 @@ export function Navbar() {
   }
 
   const navItems: INavItem[] = [
-    { to: '/', label: t('navbar.home') },
     { to: '/about', label: t('navbar.about') },
     { to: '/skills', label: t('navbar.skills') },
-    { to: '/works', label: t('navbar.works') },
     { to: '/experiences', label: t('navbar.experiences') },
     { to: '/contact', label: t('navbar.contact') },
   ]

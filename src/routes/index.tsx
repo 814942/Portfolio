@@ -1,11 +1,13 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "../App";
-import NotFound from "@/components/NotFound";
+
 import Hero from "@/pages/home/Home";
 import Skills from "@/pages/skills/Skills";
 import About from "@/pages/about/About";
-import Works from "@/pages/works/Works";
+import Jobs from "@/pages/jobs/Jobs";
+import Contacts from "@/pages/contacts/Contacts";
+import NotFound from "@/components/NotFound";
 
 const routes = [
   {
@@ -13,11 +15,10 @@ const routes = [
     element: <App />,
     children: [
       { index: true, element: <Hero /> },
-      { path: "skills", element: <Skills/> },
       { path: "about", element: <About /> },
-      { path: "works", element: <Works /> },
-      // { path: "experiences", element: <Jobs /> },
-      // { path: "contact", element: <Contact /> },
+      { path: "skills", element: <Skills/> },
+      { path: "experiences", element: <Jobs /> },
+      { path: "contact", element: <Contacts /> },
       { path: "*", element: <NotFound /> }
     ],
   },

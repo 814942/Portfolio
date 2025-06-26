@@ -13,7 +13,7 @@ export function LanguageSwitch() {
         role="img"
       >
         <img
-          src="https://flagcdn.com/16x12/es.png"
+          src="https://flagcdn.com/16x12/ar.png"
           width="24"
           height="18"
           alt="Español"

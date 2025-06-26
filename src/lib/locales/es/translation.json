@@ -21,10 +21,12 @@
   "hero": {
     "title": "Pablo Garay",
     "intro": "Desarrollador fullstack con alma rockera, enfocado en el backend. Más de 4 años resolviendo problemas reales con código limpio y APIs robustas. Curioso, autodidacta y siempre listo para el próximo desafío.",
-    "photoAlt": "Foto de Pablo Garay"
+    "photoAlt": "Foto de Pablo Garay",
+    "cta": "Sobre mi"
   },
   "skills": {
     "title": "Habilidades",
+    "subtitle": "Tecnologías y herramientas que domino",
     "items": {
       "languages": {
         "name": "Lenguajes",
@@ -94,7 +96,8 @@
           { "id": "serverless", "name": "Serverless" }
         ]
       }
-    }
+    },
+    "open": "Abrir"
   },
   "error": {
     "title": "Algo salió mal",
@@ -132,7 +135,7 @@
       }
     ]
   },
-  "jobs": {
+  "works": {
     "all": ["codeBakery", "todoList", "weatherApp", "gameOfLife"],
     "highlights": "Highlights include",
     "stack": "My projects showcase a diverse tech stack",
@@ -241,5 +244,62 @@
   },
   "common": {
     "close": "Cerrar"
+  },
+  "jobs": {
+    "all": ["1", "2"],
+    "title": "Experiencias laborales",
+    "subtitle": "He trabajado en diversas empresas, aportando mis habilidades en desarrollo full stack",
+    "data": {
+      "1": {
+        "name": "Creative Dog",
+        "location": "Buenos Aires, Argentina - Remoto",
+        "description": {
+          "title": "Desarrollador Back-End (Semi Senior)",
+          "date": "Abril 2024 – Mayo 2025",
+          "description": [
+            "E-commerce Back-End: Diseñé y construí el backend de una tienda online: todo lo que pasa detrás del botón de comprar. Usé herramientas modernas para asegurar que el sitio fuera rápido, seguro y escalable..",
+            "App de Gestión: Lideré la creación de un panel administrativo para que el equipo pudiera gestionar usuarios, pedidos y más, de forma clara y eficiente. Me ocupé de que fuera intuitivo y veloz, usando tecnologías actuales del mundo web.",
+            "Más allá de programar, aporté ideas para que el equipo trabajara mejor y el producto final fuera de mayor calidad. Siempre busco maneras de optimizar lo que hacemos.",
+            "Cuando aparecían problemas, no solo los resolvía, sino que proponía soluciones estratégicas para evitar que vuelvan a ocurrir. Trabajo con compromiso para que los proyectos lleguen a buen puerto."
+          ],
+          "skills": [
+            "Back-End: Node.js, NestJS, TypeScript, MongoDB, mySQL.",
+            "Front-End: React, Next.js, TypeScript.",
+            "Herramientas y Prácticas: metodologías ágiles, CI/CD, APIs REST.",
+            "Optimización de performance, arquitectura escalable, liderazgo de equipo."
+          ]
+        }
+      },
+      "2": {
+        "name": "Clear Tech",
+        "location": "Buenos Aires, Argentina - Remoto",
+        "description": {
+          "title": "Desarrollador Full Stack (Semi Senior)",
+          "date": "Junio 2021 – Enero 2024",
+          "description": [
+            "Call Center: Contribuí a optimizar una plataforma de atención telefónica usada por miles de empleados. Logré mejorar su rendimiento en un 70%, haciendo que fuera más rápida, estable y eficiente para quienes la usan a diario.",
+            "Gestión de Multas de Tránsito: Desarrollé desde cero un conjunto de aplicaciones web para automatizar la gestión de infracciones de tránsito en Argentina. Implementé un sistema basado en microservicios que permite controlar cada parte del proceso de forma ágil y escalable."
+          ],
+          "skills": [
+            "Back-End: Node.js, NestJS, GraphQL, TypeScript, mySQL.",
+            "Front-End: React, TypeScript.",
+            "Herramientas y Prácticas: metodologías ágiles, CI/CD, APIs REST & GraphQL.",
+            "Optimización de performance, arquitectura escalable, liderazgo de equipo."
+          ]
+        }
+      }
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Envíame un mensaje y te responderé",
+    "name": "Tu nombre",
+    "email": "Tu correo",
+    "whatsapp": "WhatsApp (opcional)",
+    "message": "Tu mensaje",
+    "send": "Enviar",
+    "sending": "Enviando...",
+    "success": "¡Mensaje enviado! ¡Gracias!",
+    "error": "Error al enviar el mensaje. ¡Intenta de nuevo!"
   }
 }
