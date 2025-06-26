@@ -1,0 +1,240 @@
+{
+  "navbar": {
+    "ariaLabel": "Main navigation",
+    "home": "Home",
+    "skills": "Skills",
+    "about": "About",
+    "works": "Works",
+    "experiences": "Experiences",
+    "contact": "Contact",
+    "language": "Language selection"
+  },
+  "footer": {
+    "title": "Stay Connected",
+    "ariaLabel": "Footer",
+    "socialAria": "Social media"
+  },
+  "notfound": {
+    "message": "Sorry, the page you are looking for does not exist.",
+    "cta": "Go to Home"
+  },
+  "hero": {
+    "title": "Pablo Garay",
+    "intro": "Fullstack dev with a rocker's soul, backend-oriented. 4+ years building real-world solutions with clean code and solid APIs. Curious, self-taught, and always ready for the next challenge.",
+    "photoAlt": "Photo of Pablo Garay"
+  },
+  "skills": {
+    "title": "Skills",
+    "items": {
+      "languages": {
+        "name": "Languages",
+        "desc": "Programming languages used for building robust and scalable applications.",
+        "icon": "languages",
+        "childs": [
+          { "id": "ts", "name": "TypeScript" },
+          { "id": "js", "name": "JavaScript" },
+          { "id": "csharp", "name": "C#" },
+          { "id": "java", "name": "Java" },
+          { "id": "python", "name": "Python" }
+        ]
+      },
+      "tools": {
+        "name": "Tools",
+        "desc": "Essential tools for development, automation, and API testing.",
+        "icon": "tools",
+        "childs": [
+          { "id": "git", "name": "Git" },
+          { "id": "docker", "name": "Docker" },
+          { "id": "cicd", "name": "CI/CD" },
+          { "id": "postman", "name": "Postman" },
+          { "id": "swagger", "name": "Swagger" }
+        ]
+      },
+      "frontend": {
+        "name": "Frontend",
+        "desc": "Modern frameworks and libraries for building interactive user interfaces.",
+        "icon": "frontend",
+        "childs": [
+          { "id": "next", "name": "Next.js" },
+          { "id": "tailwind", "name": "Tailwind CSS" },
+          { "id": "react", "name": "React" },
+          { "id": "redux", "name": "Redux" }
+        ]
+      },
+      "backend": {
+        "name": "Backend",
+        "desc": "Technologies for building scalable and efficient server-side applications.",
+        "icon": "backend",
+        "childs": [
+          { "id": "node", "name": "Node.js" },
+          { "id": "nest", "name": "NestJS" },
+          { "id": "express", "name": "Express" },
+          { "id": "graphql", "name": "GraphQL" }
+        ]
+      },
+      "databases": {
+        "name": "Databases",
+        "desc": "Relational and NoSQL databases for data storage and management.",
+        "icon": "databases",
+        "childs": [
+          { "id": "postgres", "name": "PostgreSQL" },
+          { "id": "mysql", "name": "MySQL" },
+          { "id": "mongodb", "name": "MongoDB" },
+          { "id": "redis", "name": "Redis" }
+        ]
+      },
+      "architecture": {
+        "name": "Architecture",
+        "desc": "Design patterns and paradigms for scalable, maintainable systems.",
+        "icon": "architecture",
+        "childs": [
+          { "id": "restful", "name": "RESTful" },
+          { "id": "graphql", "name": "GraphQL" },
+          { "id": "microservices", "name": "Microservices" },
+          { "id": "serverless", "name": "Serverless" }
+        ]
+      }
+    }
+  },
+  "error": {
+    "title": "Something went wrong",
+    "message": "An unexpected error occurred. Please try again or reload the page.",
+    "reload": "Reload"
+  },
+  "about": {
+    "title": "About Me",
+    "bio": "I'm Pablo Garay, a passionate fullstack developer with a rocker's soul. I love building robust APIs, clean architectures, and beautiful interfaces. Curious, self-taught, and always ready for the next challenge. When I'm not coding, you'll find me playing guitar, gaming, or exploring new technologies.",
+    "timeline": [
+      {
+        "date": "Always - 2020",
+        "title": "Passionate About Computing",
+        "desc": "Since I was a child, technology and logic have fascinated me. I always wanted to understand how things work and how to create them."
+      },
+      {
+        "date": "2020 - 2021",
+        "title": "Computer Science Student",
+        "desc": "Formal training in computer science, where I built a solid foundation and discovered my passion for software development."
+      },
+      {
+        "date": "2021 - 2023",
+        "title": "Fullstack Developer",
+        "desc": "First real projects, learning to connect frontend and backend, and working in teams to create complete products."
+      },
+      {
+        "date": "2023 - 2025",
+        "title": "Backend-Oriented Fullstack Developer",
+        "desc": "Specialized in backend, APIs, and clean architectures, without neglecting design and user experience."
+      },
+      {
+        "date": "Always",
+        "title": "Gamer, Rocker & Explorer",
+        "desc": "Music, video games, and a curiosity for learning new things are essential parts of my life and creativity."
+      }
+    ]
+  },
+  "jobs": {
+    "all": ["codeBakery", "todoList", "weatherApp", "gameOfLife"],
+    "highlights": "Highlights include",
+    "stack": "My projects showcase a diverse tech stack",
+    "repo": "Repository",
+    "live": "Live Demo",
+    "video": "Video",
+    "openRepo": "Open repository",
+    "openLive": "Open live demo",
+    "openVideo": "Watch video",
+    "videoModalLabel": "Project video",
+    "videoPlayer": "Video player",
+    "data": {
+      "codeBakery": {
+        "name": "Code Bakery",
+        "level": " - trainee",
+        "summary": "E-commerce platform as final project at Soy Henry bootcamp.",
+        "description": [
+          "Developed an online sales platform as the final project in the Soy Henry bootcamp, applying Scrum methodology in a collaborative environment.",
+          "The project involved building a dynamic frontend, efficient backend, and robust database integration."
+        ],
+        "stackList": [
+          "🚀 Frontend: React",
+          "⚡ Backend: Node.js, GraphQL",
+          "🛢️ Database: PostgreSQL"
+        ],
+        "highlightLists": [
+          "Strengthened teamwork and agile organization.",
+          "Integrated modern technologies into software development."
+        ],
+        "status": "Currently offline",
+        "video": "https://vimeo.com/551611700",
+        "repository": "https://github.com/ecommercehenry/codebakery",
+        "link": ""
+      },
+      "todoList": {
+        "name": "Todo List",
+        "level": " - trainee",
+        "summary": "Simple and functional app to organize daily tasks.",
+        "description": [
+          "A straightforward application designed to efficiently organize daily tasks.",
+          "Developed with a focus on simplicity and usability."
+        ],
+        "stackList": [
+          "React",
+          "LocalStorage"
+        ],
+        "highlightLists": [
+          "Add, edit, and delete tasks effortlessly.",
+          "Mark tasks as completed.",
+          "Keep a clear record of pending tasks."
+        ],
+        "status": "Online",
+        "video": "https://www.youtube.com/watch?v=tmXV5u8ccPg",
+        "repository": "https://github.com/814942/ToDoList",
+        "link": "https://todolisto3000.netlify.app"
+      },
+      "weatherApp": {
+        "name": "Weather App",
+        "level": " - trainee",
+        "summary": "Web app providing real-time weather updates for any location.",
+        "description": [
+          "A web application that provides real-time weather updates for any location worldwide.",
+          "Developed using knowledge gained from the Soy Henry bootcamp."
+        ],
+        "stackList": [
+          "React",
+          "OpenWeatherMap API"
+        ],
+        "highlightLists": [
+          "Search by city for current weather details.",
+          "View temperature in Celsius or Fahrenheit.",
+          "See humidity, wind speed, and weather conditions."
+        ],
+        "status": "Online",
+        "video": "https://youtu.be/Qpkf6PR-Tjg",
+        "repository": "https://github.com/814942/Weather-App",
+        "link": "https://weather-app-3000.netlify.app/"
+      },
+      "gameOfLife": {
+        "name": "Game of Life",
+        "level": " - trainee",
+        "summary": "Interactive simulation based on John Conway's Game of Life.",
+        "description": [
+          "An app to explore how life begins and evolves through an interactive simulation.",
+          "A fun and educational way to learn about artificial life and mathematical simulations."
+        ],
+        "stackList": [
+          "React"
+        ],
+        "highlightLists": [
+          "Cellular automation based on John Conway's Game of Life.",
+          "Dynamic evolution: watch cells live, die, and form patterns.",
+          "Interactive controls: start, pause, and reset the simulation."
+        ],
+        "status": "Online",
+        "video": "https://youtu.be/C8nGrMsngy0",
+        "repository": "https://github.com/814942/game-of-life",
+        "link": "https://game-of-life-3000.netlify.app/"
+      }
+    }
+  },
+  "common": {
+    "close": "Close"
+  }
+}
