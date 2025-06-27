@@ -9,6 +9,7 @@ export default function Contacts() {
   const [sent, setSent] = useState(false);
   const [loading, setLoading] = useState(false);
   const [isOnline, setIsOnline] = useState(true);
+  console.log("🚀 ~ Contacts ~ isOnline:", isOnline)
 
   const handleSend = (e: React.FormEvent) => {
     e.preventDefault();
