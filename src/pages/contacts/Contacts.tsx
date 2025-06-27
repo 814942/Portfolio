@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { sendContactEmail } from "@/services/emailjs.service";
@@ -8,6 +8,7 @@ export default function Contacts() {
   const formRef = useRef<HTMLFormElement>(null);
   const [sent, setSent] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [isOnline, setIsOnline] = useState(true);
 
   const handleSend = (e: React.FormEvent) => {
     e.preventDefault();
@@ -24,6 +25,10 @@ export default function Contacts() {
         alert(t("contact.error"));
       });
   };
+
+  useEffect(() => {
+    setIsOnline(navigator.onLine)
+  }, [])
 
   return (
     <section className="flex flex-col items-center justify-center min-h-[60vh] px-4 py-8">
@@ -75,7 +80,7 @@ export default function Contacts() {
         <motion.button
           type="submit"
           whileTap={{ scale: 0.97 }}
-          disabled={loading}
+          disabled={loading || !isOnline}
           className="btn btn-primary font-bold text-lg py-2 px-6 rounded-full shadow-xl bg-primary text-white dark:text-black hover:scale-105 transition-all"
         >
           {loading ? t("contact.sending") : t("contact.send")}
@@ -84,9 +89,18 @@ export default function Contacts() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="text-green-600 font-semibold mt-2"
+            className="text-green-600 font-semibold mt-2 text-center"
           >
             {t("contact.success")}
+          </motion.div>
+        )}
+        {!isOnline && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="text-red-600 font-semibold mt-2 text-center"
+          >
+            {t("contact.offline")}
           </motion.div>
         )}
       </motion.form>
