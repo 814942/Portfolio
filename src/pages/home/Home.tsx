@@ -2,8 +2,7 @@ import { useTranslation } from "react-i18next"
 import { motion } from "framer-motion"
 import { Link } from "react-router-dom"
 
-import me from '@/assets/images/me.webp'
-import not_found from '@/assets/images/not_found.png'
+import me from '../../../public/images/me.webp'
 
 import { Button } from "@/components/ui/button"
 import { Skeleton } from "@/components/ui/skeleton"
@@ -32,12 +31,6 @@ export default function Hero() {
             whileHover={{ scale: 0.95, }}
             whileTap={{ scale: 0.98 }}
             onLoad={() => <Skeleton /> }
-            onError={(e) => {
-              const target = e.currentTarget as HTMLImageElement;
-                            console.log("🚀 ~ Hero ~ target:", target)
-
-              target.src = not_found;
-            }}
           />
         </div>
       </div>

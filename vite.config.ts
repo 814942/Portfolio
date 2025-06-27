@@ -16,7 +16,8 @@ export default defineConfig({
         'apple-touch-icon.png',
         'android-chrome-192x192.png',
         'android-chrome-512x512.png',
-        'maskable_icon.png'
+        'maskable_icon.png',
+        'images/me.webp'
       ],
       manifest: {
         name: 'Pablo Garay | Backend Developer',
