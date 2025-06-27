@@ -1,9 +1,12 @@
-import SimpleParticles from "@/components/Particles"
 import { useTranslation } from "react-i18next"
-import me from '@/assets/images/me.webp'
-import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 import { Link } from "react-router-dom"
+
+import me from '@/assets/images/me.webp'
+
+import { Button } from "@/components/ui/button"
+import { Skeleton } from "@/components/ui/skeleton"
+import SimpleParticles from "@/components/Particles"
 
 export default function Hero() {
   const { t } = useTranslation()
@@ -23,10 +26,12 @@ export default function Hero() {
             className="w-48 h-48 md:w-64 md:h-[800px] object-cover rounded-full border-4 border-primary shadow-xl bg-background"
             style={{ boxShadow: '0 8px 32px 0 rgba(0,0,0,0.15)' }}
             loading="lazy"
-            whileHover={{ scale: .88, }}
+            initial={{ scale: 0.92, opacity: 1 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, type: "spring", stiffness: 260, damping: 20 }}
+            whileHover={{ scale: 0.95, }}
             whileTap={{ scale: 0.98 }}
-            initial={{ scale: 0.92 }}
-            transition={{ type: "spring", stiffness: 260, damping: 20 }}
+            onLoad={() => <Skeleton /> }
           />
         </div>
       </div>
