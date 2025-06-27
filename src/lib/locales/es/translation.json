@@ -300,6 +300,7 @@
     "send": "Enviar",
     "sending": "Enviando...",
     "success": "¡Mensaje enviado! ¡Gracias!",
-    "error": "Error al enviar el mensaje. ¡Intenta de nuevo!"
+    "error": "Error al enviar el mensaje. ¡Intenta de nuevo!",
+    "offline": "Estás offline. Por favor, verifica tu conexión a internet."
   }
 }

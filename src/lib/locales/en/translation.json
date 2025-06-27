@@ -295,6 +295,7 @@
     "send": "Send",
     "sending": "Sending...",
     "success": "Message sent! Thank you",
-    "error": "Error sending message. Try again!"
+    "error": "Error sending message. Try again!",
+    "offline": "You are offline. Please check your internet connection."
   }
 }
