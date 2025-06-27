@@ -1,0 +1,11 @@
+/* 
+  Cache-Control: public, max-age=0, must-revalidate
+
+/service-worker.js
+  Cache-Control: no-cache
+
+/manifest.webmanifest
+  Content-Type: application/manifest+json
+
+/site.webmanifest
+  Content-Type: application/manifest+json
