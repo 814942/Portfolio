@@ -24,11 +24,10 @@ export default function Hero() {
             src={me}
             alt={t('hero.photoAlt')}
             className="w-48 h-48 md:w-64 md:h-[800px] object-cover rounded-full border-4 border-primary shadow-xl bg-background"
-            style={{ boxShadow: '0 8px 32px 0 rgba(0,0,0,0.15)' }}
             loading="lazy"
             initial={{ scale: 0.92, opacity: 1 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, type: "spring", stiffness: 260, damping: 20 }}
+            transition={{ duration: 0.5, type: "keyframes", stiffness: 260, damping: 20 }}
             whileHover={{ scale: 0.95, }}
             whileTap={{ scale: 0.98 }}
             onLoad={() => <Skeleton /> }
@@ -52,7 +51,7 @@ export default function Hero() {
           <Button
             asChild
             size="lg"
-            className="cursor-pointer shadow-xl text-lg px-8 py-4 rounded-full bg-primary text-white dark:text-black font-bold border-4 border-background hover:scale-105 hover:from-secondary hover:to-primary transition-all duration-200"
+            className="cursor-pointer shadow-xl text-lg px-8 py-4 rounded-full bg-destructive text-white dark:text-black font-bold border-4 border-background hover:scale-105 hover:opacity-99 transition-all duration-200"
             aria-label={t('hero.cta')}
           >
             <Link to="/about">{t('hero.cta')}</Link>
