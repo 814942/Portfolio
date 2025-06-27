@@ -1,25 +1,28 @@
+import { lazy } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "../App";
 
-import Hero from "@/pages/home/Home";
-import Skills from "@/pages/skills/Skills";
-import About from "@/pages/about/About";
-import Jobs from "@/pages/jobs/Jobs";
-import Contacts from "@/pages/contacts/Contacts";
-import NotFound from "@/components/NotFound";
+import suspense from "@/components/Suspense";
+
+const Hero = lazy(() => import("@/pages/home/Home"));
+const Skills = lazy(() => import("@/pages/skills/Skills"));
+const About = lazy(() => import("@/pages/about/About"));
+const Jobs = lazy(() => import("@/pages/jobs/Jobs"));
+const Contacts = lazy(() => import("@/pages/contacts/Contacts"));
+const NotFound = lazy(() => import("@/components/NotFound"));
 
 const routes = [
   {
     path: "/",
     element: <App />,
     children: [
-      { index: true, element: <Hero /> },
-      { path: "about", element: <About /> },
-      { path: "skills", element: <Skills/> },
-      { path: "experiences", element: <Jobs /> },
-      { path: "contact", element: <Contacts /> },
-      { path: "*", element: <NotFound /> }
+      { index: true, element: suspense(<Hero />) },
+      { path: "about", element: suspense(<About />) },
+      { path: "skills", element: suspense(<Skills />) },
+      { path: "experiences", element: suspense(<Jobs />) },
+      { path: "contact", element: suspense(<Contacts />) },
+      { path: "*", element: suspense(<NotFound />) }
     ],
   },
 ];
